@@ -18,6 +18,13 @@ function Send(name, subject, bodyMessage)
                     Body : bodyMessage
                 }).then
                 (
-                    message => alert(message)
+                    message => {
+                        if(message == "OK"){
+                            alert("Email Sent Successfully!")
+                        }
+                        else{
+                            alert("Error: " + message)
+                        }
+                    }
                 );
             }
