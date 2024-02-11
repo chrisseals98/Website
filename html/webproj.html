@@ -11,7 +11,7 @@
           Description:  Page for information on my CSCI-1210 final
         -->
 
-        <title>CSCI-1210 Final</title>
+        <title>Web Projects</title>
         <link href="../media/wifiBarGraph.svg" rel="icon">
 
         <meta charset="UTF-8">
@@ -44,7 +44,7 @@
                 <div class="dropdown">
                   <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Projects</a>
                     <ul class="dropdown-menu bg-dark">
-                      <li><a class="dropdown-item text-white active" href="#">Website Project</a></li>
+                      <li><a class="dropdown-item text-white active" href="#">Web Projects</a></li>
                       <li><a class="dropdown-item text-white" href="javaproj.html">Java Game Project</a></li>
                       <li><a class="dropdown-item text-white" href="csharpproj.html">.NET Projects</a></li>
                       <li><a class="dropdown-item text-white" href="linux.html">Linux Projects</a></li>
@@ -60,7 +60,98 @@
       </nav>
 
         <div class="container-fluid p-5 text-center bg-dark text-white">
-            <h1>CSCI-1210 Website Project</h1>
+          <h3>ASP.NET DnD web app</h3>
+          <figure class="figure">
+            <img src="../media/dnd.png" alt="Picture of the dnd app" class="figure-img img-fluid rounded">
+          </figure>
+            <p class="bg-dark text-white">
+              This project was just a personal project to learn more with ASP.NET. All it is is a simple web app that allows users to create DnD characters, and perform all CRUD operations on them. It was a lot of fun learning more about how to use authenication for this project. It just uses simple user accounts with the default templates in ASP.NET and are just stored in the SQLite database that is included with the application.
+                
+              <p class="text-start"><br>What was used for this project:</p>
+              <ul>
+                <li class="text-start text-info">C#, ASP.NET 8.0 with entity framework</li>
+                <li class="text-start text-info">NuGet for SQLite packages for entity framework</li>
+                <li class="text-start text-info">SQLite</li>
+              </ul>
+              <p>
+                Here is a link to the gitub repository for the project: 
+                <a href="https://github.com/chrisseals98/DndCharacterCreator" class="link-info" target="_blank">DnD web application</a>
+              </p>
+        </div>
+
+        <p class="border-bottom"></p>
+
+        <div class="container-fluid p-5 text-center bg-dark text-white">
+          <h3>Django DnD web app</h3>
+          <figure class="figure">
+            <img src="../media/dndDjango.png" alt="Picture of the dnd app in python" class="figure-img img-fluid rounded">
+          </figure>
+            <p class="bg-dark text-white">
+              I went into this project with the same idea as the project above this, but I wanted to recreate it in Django so I can learn the framework more. At the time of writing, it is still very simple on the frontend, and only admins can add the characters, but I'm still proud of what I have accomplished so far as I never used Django before!
+                
+              <p class="text-start"><br>What was used for this project:</p>
+              <ul>
+                <li class="text-start text-info">Python with the Django web framework</li>
+                <li class="text-start text-info">SQLite</li>
+              </ul>
+              <p>
+                Here is a link to the gitub repository for the project: 
+                <a href="https://github.com/chrisseals98/DnDCharacter_Python" class="link-info" target="_blank">DnD web application in python</a>
+              </p>
+        </div>
+
+        <p class="border-bottom"></p>
+
+        <div class="container-fluid p-5 text-center bg-dark text-white">
+          <h3>BucStop</h3>
+          <figure class="figure">
+            <img src="../media/bucstop.png" alt="Picture of bucstop" class="figure-img img-fluid rounded">
+          </figure>
+            <p class="bg-dark text-white">
+              This project was for my Software Engineering 2 class. It was basically the same as my SE1 class that is described below, we were put into teams and we had to follow the scrum practices while following the agile principles while working on a project. This project we were able to chose from two options, our team chose the option to create a web app that was for games for ETSU students to play. The app features simple browser games that are playable on mobile devices. We also implemented a simple authenication feature where you had to enter an ETSU email to access the games. The app did require a microservice to run with it to get game data. The microservice wasn't exactly needed, but we made it because it was a requirement for the class and we had to practice it with the project. We also practiced deploying with this project and used pipelines for automated deployment. We deployed it on AWS with docker containers and were even able to get https working with a domain one of the group members owned!
+                
+              <p class="text-start"><br>What was used for this Project:</p>
+              <ul>
+                <li class="text-start text-info">C#, ASP.NET 6.0</li>
+                <li class="text-start text-info">AWS</li>
+                <li class="text-start text-info">Docker</li>
+              </ul>
+              <p>
+                Here is a link to the gitub repository for the project: 
+                <a href="https://github.com/chrisseals98/BOBBY" class="link-info" target="_blank">BucStop application</a>
+                <br>
+                Here is a link to the microservice:
+                <a href="https://github.com/chrisseals98/GameInfoMicroService" class="link-info" target="_blank">Microservice</a>
+                
+              </p>
+        </div>
+
+        <p class="border-bottom"></p>
+
+        <div class="container-fluid p-5 text-center bg-dark text-white">
+          <h3>BucHunt</h3>
+          <figure class="figure">
+            <img src="../media/buchunt.png" alt="Picture of buchunt" class="figure-img img-fluid rounded">
+          </figure>
+            <p class="bg-dark text-white">
+              This project was a very interesting project from school in my Software Engineering 1 class. For the final project of the semester, we were put into teams and we had to follow the scrum practices while following the agile principles while working on a project. The assignment given to us was a scavenger hunt application that was themed for our university to have players locate buildings on campus. We also were given an existing project from one of the teacher's previous classes semesters, so we had to learn the codebase and then add more features based on the requirements given to us. It was an interesting experience but I definitely learned a lot from it and got to work with a lot of people on the project!
+                
+              <p class="text-start"><br>What was used for this Project:</p>
+              <ul>
+                <li class="text-start text-info">C#, ASP.NET 6.0 with entity framework</li>
+                <li class="text-start text-info">NuGet for SQLite packages for entity framework</li>
+                <li class="text-start text-info">SQLite</li>
+              </ul>
+              <p>
+                Here is a link to the gitub repository for the project: 
+                <a href="https://github.com/chrisseals98/4250_proj.git" class="link-info" target="_blank">BucHunt application</a>
+              </p>
+        </div>
+
+        <p class="border-bottom"></p>
+
+        <div class="container-fluid p-5 text-center bg-dark text-white">
+            <h3>CSCI-1210 Website Project</h3>
             <figure class="figure">
               <img src="../media/csci1210Website.png" alt="Picture of the website" class="figure-img img-fluid rounded">
             </figure>
@@ -84,7 +175,7 @@
         
         <div class="text-white">
           <footer class="bg-dark border-top">
-            <img src="../media/bullseye.svg"> 2022 Chris Seals
+            <img src="../media/bullseye.svg"> 2024 Chris Seals
           </footer>
         </div>
     </body>
