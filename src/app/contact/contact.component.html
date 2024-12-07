@@ -1,0 +1,30 @@
+<div class="container-fluid p-5 text-center bg-dark text-white">
+    <h1>Contact Me!</h1>
+    <figure class="figure">
+      <img src="letter.jpg" alt="Picture of letter" class="figure-img img-fluid rounded">
+    </figure>
+    <p>
+      If you wish to contact me, please email me at <address class="text-info">{{'chrisseals9893@gmail.com'}}</address>or use my form below! If you use the form below, please include an email in your message if you wish for me to contact back!
+
+    <div id="input">
+      <form class="text-start" id="email" [formGroup]="form">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required formControlName="name">
+        
+        <label for="subject" class="form-label">Subject:</label>
+        <input type="text" class="form-control" id="subject" placeholder="Enter the subject" name="subject" required formControlName="subject">
+
+        <label for="message" class="form-label">Message:</label>
+        <textarea type="text" class="form-control" rows="5" id="message" placeholder="Enter your message" name="message" required formControlName="message"></textarea>
+      </form>
+      <br>
+      <button class="btn btn-primary" onclick="Send()">Submit</button>
+    </div>
+
+    <div id="success" style="display: none;">
+      <p>
+        Thank you for the message!
+      </p>
+    </div>
+
+</div>
