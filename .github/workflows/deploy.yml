@@ -38,13 +38,7 @@ jobs:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ secrets.AWS_REGION }}
-    - name: Upload S3
-    # You may pin to the exact commit or the version.
-    # uses: shallwefootball/upload-s3-action@4350529f410221787ccf424e50133cbc1b52704e
-      uses: shallwefootball/upload-s3-action@v1.3.3
-      with:
-        # aws bucket name
-        aws_bucket: ${{ secrets.AWS_BUCKET }}
-        # directory to upload
-        source_dir: '/home/runner/work/Website/Website/dist/website'
-    
+    - name: Sync S3 Bucket
+    run: |
+      aws s3 sync dist/website s3://${{ secrets.AWS_BUCKET }}
+  
