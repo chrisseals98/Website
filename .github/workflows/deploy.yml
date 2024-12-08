@@ -37,6 +37,7 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{ secrets.AWS_REGION }}
     - name: Upload S3
     # You may pin to the exact commit or the version.
     # uses: shallwefootball/upload-s3-action@4350529f410221787ccf424e50133cbc1b52704e
